@@ -1,8 +1,9 @@
-import Card from './Card';
+import React from 'react';
+import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 import './Expenseitems.css';
 
-function Expenseitems(props) {
+const Expenseitems=(props)=> {
 
 
   return (
