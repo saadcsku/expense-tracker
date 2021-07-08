@@ -1,17 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Card from '../UI/Card';
 import ExpenseDate from './ExpenseDate';
 import './Expenseitems.css';
 
 const Expenseitems=(props)=> {
 
-  let title=props.title;
+    const [title, setTitle] = useState(props.title)
+
 
   const clickHandler=() =>{
 
-    title="Wasi is back"
-    console.log("Button Clicked " +title )
-  
+    setTitle("Updated");
+
   }
   return (
     <Card className="expense-item">
